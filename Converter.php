@@ -17,7 +17,7 @@ class Converter
 
     public function unzipFiles(): void
     {
-        $zip = new ZipArchive;
+        $zip = new ZipArchive();
         $zipFiles = scandir($this->directory);
 
         if (!$zipFiles) die('The wrong directory');
